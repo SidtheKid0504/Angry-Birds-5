@@ -75,3 +75,10 @@ function mouseDragged(){
 function mouseReleased(){
     slingshot.fly();
 }
+
+function keyPressed() {
+    // 32 is ACII Value for Space Bar
+    if (keyCode === 32) {
+        slingshot.attach(bird.body);
+    }
+}
